@@ -1,0 +1,314 @@
+/* Reset */
+
+body, html, h1, h2, h3, p, ul {
+    padding: 0px;
+    margin: 0px;   
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #252525;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Menu */
+
+.menu {
+    background-color: #252525;
+    padding: 15px 0;
+}
+
+.menu-logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-nav ul {
+    float: right;
+    margin-top: 10px;
+}
+
+.menu-nav ul li {
+    display: inline-block;
+}
+
+.menu-nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125em;
+    display: block;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 739px){
+    .menu-nav ul {
+        float: none;
+    }
+    
+    .menu-nav ul li {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .menu-nav a{
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-right: 6px;
+    }
+}
+
+/* Intro */
+
+.intro {
+    background-image: url(../img/bg-intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.intro h1::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 10px auto;
+}
+
+.intro p {
+    font-style: italic;
+    font-size: 1.125em;
+}
+
+@media only screen and (max-width: 739px){
+    .intro {
+        padding: 80px 0;
+    }
+}
+
+/* Sobre */
+
+.sobre {
+    padding: 60px 0;
+}
+
+.sobre h2 {
+    font-size: 2.25em;
+    text-align: center;
+    margin-bottom: 60px;  
+}
+
+.sobre-item h3 {
+    font-size: 2.25em;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    line-height: 1em;
+    background-color: #252525;
+    color: #fff;
+    padding: 5px 0 10px 0;
+    width: 200px;
+    position: relative;
+    top: -25px;
+    margin-bottom: 30px;
+}
+
+.sobre p {
+    font-size: 1.125em;
+    line-height: 1.4em;
+    font-style: italic;
+    max-width: 620px;
+    margin: 0px auto 0 auto;
+    text-align: center;
+}
+
+/* Produtos */
+
+.produtos {
+    background-color: #E7EDF8;
+    border-top: 3px solid #D6D3C8;
+    padding: 60px 0;
+}
+
+.produtos-item {
+    margin-bottom: 40px;
+}
+
+.produtos-item h2 {
+    font-size: 2.25em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.produtos-item h2::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: currentColor;
+    border: 5px solid #E7EDF8;
+    box-shadow: 0 0 0 10px currentColor ;
+    margin: 0px auto 20px auto;
+  
+}
+
+h2.produtos-paulista::before {
+    color: #492901;
+}
+
+h2.produtos-carioca::before {
+    color: #C17139;
+}
+
+h2.produtos-mineiro::before {
+    color: #D7A54D;
+}
+
+.produtos-item p {
+    font-size: 0.875em;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.produtos-btn {
+    border: 3px #252525 solid;
+    color: #252525;
+    font-size: 1.125em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 180px;
+    padding: 15px 0;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Locais */
+
+.locais {
+    padding: 60px 0;
+}
+
+.locais-item {
+    margin-bottom: 20px;
+}
+
+.locais-descricao h2 {
+    font-size: 2.25em;
+    margin-bottom: 20px;
+}
+
+.locais-descricao p {
+    font-size: 1.125em;
+    line-height: 1.4em;
+    margin-bottom: 40px;
+    min-width: 320px;
+}
+
+.locais-descricao a {
+    border: 3px #252525 solid;
+    color: #252525;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    
+}
+
+@media only screen and (max-width: 739px){
+    .locais-descricao p {
+        min-width: 300px;
+    }
+}
+
+/* Assine */
+
+.assine {
+    background-color: #E7EDF8;
+    padding: 30px;
+}
+
+.assine-info h2 {
+    font-size: 2.25em;
+}
+
+.assine-info p {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.assine form input {
+   border: 3px solid #252525;
+   background: none;
+   font-size: 1.5em;
+   font-style: italic;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   width: calc(100% - 130px);
+   padding: 10px 0 11px 0;
+   float: left;
+}
+
+.assine button {
+    width: 130px;
+    border: none;
+    background: #252525;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 13px 0 ;
+ }
+
+ @media only screen and (max-width: 739px){
+    .assine form input{
+        width: 100%;
+        float: none;
+        margin: 10px auto 0 auto;
+    }
+ }
+
+ /* Footer */
+
+ .footer {
+     background-color: #D6D3C8;
+     padding: 30px;
+ }
+
+.footer p {
+    font-size: 1.125em;
+    line-height: 1.4em;
+}
+
+.footer img {
+    float: right;
+}
+
+@media only screen and (max-width: 939px){
+  
+   
+   .footer p {
+       text-align: left;
+   }
+   
+   .footer img {
+       margin: 20px auto;
+       float: none;
+   }
+}
