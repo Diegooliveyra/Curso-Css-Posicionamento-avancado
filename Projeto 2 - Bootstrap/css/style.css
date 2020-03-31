@@ -1,0 +1,182 @@
+/* Reset */
+
+body, p, h1, h2, ul, li{
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #252525;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ************************ */
+
+/* Header */
+
+.header-info {
+    background-color: #D6D3C8;
+    padding: 5px 0;
+    font-size: 0.875em;
+    text-align: center;
+}
+
+.header-logo img {
+    display: block;
+    padding: 40px 0px;
+    margin: 0 auto;
+}
+
+.header-menu {
+    border-top: 3px solid #D6D3C8;
+    border-bottom: 3px solid #D6D3C8;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.header-menu ul li {
+    display: inline-block;
+}
+
+.header-menu ul li a {
+    text-decoration: none;
+    color: #252525;
+    font-size: 1.125em;
+    padding: 5px 10px 5px 0;
+    display: block;
+}
+
+.header-menu ul li a::before {
+    content: "•";
+    padding-right: 10px;
+}
+
+.header-menu li:first-child a::before {
+    content: "";
+}
+
+/* Filtro */
+
+.filtro {
+    background-color: #E7E4D8;
+    border: 3px solid #D6D3C8;
+    padding: 20px;
+    align-self: flex-start;
+}
+
+.filtro h2 {
+    font-size: 1.125em;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.filtro ul {
+    border-top: 3px solid #C8BEB4;
+    border-bottom: 3px solid #C8BEB4;
+    padding: 10px 0;
+}
+
+.filtro ul li {
+    font-size: 1.125em;
+    font-style: italic;
+    line-height: 2em;
+}
+
+.filtro ul li::after {
+   content: "";
+   display: block;
+   width: 20px;
+   height: 20px;
+   border: 3px solid #C8BEB4;
+   float: right;
+   margin-top: 5px 
+}
+
+.sabor {
+    overflow: hidden;
+}
+
+.sabor span {
+    text-indent: -80px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: currentColor;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.sabor-3 {
+    color: #492901;
+    box-shadow: 20px 0 0 0 currentColor,
+                40px 0 0 0 currentColor;
+}
+
+.sabor-4 {
+    color: #C17139;
+    box-shadow: 20px 0 0 0 currentColor,
+                40px 0 0 0 currentColor,
+                60px 0 0 0 currentColor;
+}
+
+.sabor-5 {
+    color: #D7A54D;
+    box-shadow: 20px 0 0 0 currentColor,
+                40px 0 0 0 currentColor,
+                60px 0 0 0 currentColor,
+                80px 0 0 0 currentColor;
+}
+
+@media only screen and (max-width: 739px){
+    .filtro {
+       display: none;
+    }
+}
+
+/* Produtos */
+
+.produtos h1 {
+    font-size: 3em;
+    font-weight: normal;
+}
+
+.produtos li img {
+    display: block;
+    max-width: 100%;
+    border:  3px solid #fff;
+    box-shadow: 0 0 0 3px #252525;
+    margin: 40px 3px 0 3px;
+}
+
+.produtos li span {
+    background-color: #E7E4D8;
+    padding: 10px;
+    font-size: 0.875em;
+    font-weight: bold;
+    position: relative;
+    top:-15px
+}
+
+.produtos li h2 {
+    font-size: 0.875em;
+    font-weight: normal;
+}
+
+/* Footer */
+
+.footer {
+    background-color:#E7E4D8;
+    text-align: center;
+    padding: 60px 0px;
+    font-size: 1.125em;
+    margin-top: 80px;
+}
